@@ -1,14 +1,7 @@
-const utilisateurs = ["Ali", "Bilal", "Chams", "Dalil"]; 
-function saluerUtilisateur(nom) { 
-return `Bonjour ${nom}, bienvenue !`; 
+function ajouterUtilisateur(nom) {
+utilisateurs.push(nom); 
+console.log(`${nom} a été ajouté à la liste !`); 
 } 
-function saluerTous() { 
-console.log("=== SALUTATIONS ==="); 
-utilisateurs.forEach(utilisateur => { 
-console.log(saluerUtilisateur(utilisateur)); 
-}); 
-console.log("=================="); 
-} 
-// Exécuter
+// Tester la nouvelle fonction 
+ajouterUtilisateur("Émilie"); 
 saluerTous(); 
-console.log(`Nombre d'utilisateurs: ${utilisateurs.length}`);
